@@ -26,21 +26,21 @@ case $option in
 1)
 clear
 cd
-git clone https://github.com/shannuu/gungajarvis
+git clone https://github.com/shannuu/GungaJarvis
 sleep 3
 clear
 ;;
 2)
 clear
 cd
-git clone https://github.com/shannuu/morseconverter
+git clone https://github.com/shannuu/MorseConverter
 sleep 3
 clear
 ;;
 3)
 clear
 cd
-git clone https://github.com/shannuu/alphanumerical-morseconverter
+git clone https://github.com/shannuu/AlphaNumerical-MorseConverter
 sleep 3
 clear
 ;;
