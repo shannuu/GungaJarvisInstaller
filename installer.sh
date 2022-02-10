@@ -8,10 +8,11 @@ echo -e '\n'
 echo -e '\n'
 echo -e '\e[31m       |\e[0m-----------------------------------------------\e[31m|'
 echo -e '\e[31m       |                                               |'
-echo -e '\e[31m       |              [\e[32m1\e[31m] Gunga\e[0m jarvis\e[31m                 |'
-echo -e '\e[31m       |              [\e[32m2\e[31m] Morse \e[0mConverter \e[31m             |'
+echo -e '\e[31m       |       [\e[32m1\e[31m]         Gunga\e[0m jarvis\e[31m                |'
+echo -e '\e[31m       |       [\e[32m2\e[31m]        Morse \e[0mConverter \e[31m             |'
+echo -e '\e[31m       |       [\e[32m3\e[31m]  Alphanumerical-morse \e[0mConverter     \e[31m|'
 echo -e '\e[31m       |                                               |'
-echo -e '\e[31m       |              [\e[32m99\e[31m] exit                        |'
+echo -e '\e[31m       |                  [\e[32m99\e[31m] exit                    |'
 echo -e '\e[31m       |                                               |'
 echo -e '\e[31m       |\e[0m-----------------------------------------------\e[31m|'
 read -p $' \n\n\e[31m[\e[0m\e[32m*\e[0m\e[31m] Choose an option\e[0m: ' option
@@ -26,14 +27,21 @@ case $option in
 clear
 cd
 git clone https://github.com/shannuu/gungajarvis
-sleep 1
+sleep 3
 clear
 ;;
 2)
 clear
 cd
 git clone https://github.com/shannuu/morseconverter
-sleep 1
+sleep 3
+clear
+;;
+3)
+clear
+cd
+git clone https://github.com/shannuu/alphanumerical-morseconverter
+sleep 3
 clear
 ;;
 99)
