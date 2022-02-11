@@ -13,10 +13,25 @@ exit
 fi
 ((var++))
 done
-}
-repnamer
 rm -rf $rep > /dev/null 2>&1
 pkg install git -y > /dev/null 2>&1
 cd
 git clone https://github.com/Shannuu/GungaJarvisInstaller > /dev/null 2>&1
 echo "Done"
+}
+
+versionchecker(){
+cversion="0.0.0.1"
+cd ..
+wget https://github.com/shannuu/GungaJarvisInstaller/blob/main/version/version.txt
+version=$(sed -n 1411p version.txt | cut -c 71-77)
+if [[ $version == $cversion ]];then
+echo
+read -p $"Your repo is already the latest version, Do you still want to update [y/n]:- " option
+if [[ $option == "y" ]] || [[ $option == "Y" ]]; then
+repnamer
+fi
+fi
+rm version.txt
+}
+versionchecker
